@@ -4,7 +4,8 @@
 * [lint (software) - Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))
 * [ESLint - Pluggable JavaScript linter](https://eslint.org/)
 * [pycodestyle - documentation](https://pycodestyle.pycqa.org/en/latest/)
-
+* [Getting Started with ESLint](https://eslint.org/docs/user-guide/getting-started)
+* [JEST Getting Started](https://jestjs.io/docs/getting-started)
 
 ## Resources
 ### Read or watch:
@@ -57,6 +58,7 @@ Modify
 * function taskFirst to instantiate variables using const
 * function taskNext to instantiate variables using let
 ```
+~$ npx eslint 0-constants.js
 ~$ npm run dev 0-main.js 
 I prefer const when I can. But sometimes let is okay
 ```
