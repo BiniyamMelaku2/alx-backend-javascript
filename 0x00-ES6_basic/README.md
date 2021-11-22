@@ -107,10 +107,74 @@ $ npm run dev 7-main.js
 { income: 400, gdp: 700, capita: 900 }
 ```
 
-## [8. No need to create empty objects before adding in properties](./)
+## [8. No need to create empty objects before adding in properties](./8-getBudgetCurrentYear.js)
 Rewrite the getBudgetForCurrentYear function to use ES6 computed property names on the budget object
 ```
 $ npm run dev 8-main.js 
 { 'income-2021': 2100, 'gdp-2021': 5200, 'capita-2021': 1090 }
+```
+
+## [9. ES6 method properties](./9-getFullBudget.js)
+Rewrite getFullBudgetObject to use ES6 method properties in the fullBudget object
+```
+~$ npm run dev 9-main.js 
+$20
+20 euros
+```
+
+## [10. For...of Loops](./10-loops.js)
+Rewrite the function appendToEachArrayValue to use ES6’s for...of operator. And don’t forget that var is not ES6-friendly.
+```
+$ npm run dev 10-main.js 
+[ 'correctly-appended', 'correctly-fixed', 'correctly-displayed' ]
+```
+
+## [11. Iterator](./11-createEmployeesObject.js)
+Write a function named createEmployeesObject that will receive two arguments:
+
+* departmentName (String)
+* employees (Array of Strings)
+
+The function should return an object with the following format:
+```
+{
+     $departmentName: [
+          $employees,
+     ],
+}
+~$ npm run dev 11-main.js 
+{ Software: [ 'Bob', 'Sylvie' ] }
+```
+
+## [12. Let's create a report object](./)
+Write a function named createReportObject whose parameter, employeesList, is the return value of the previous function createEmployeesObject.
+createReportObject should return an object containing the key allEmployees and a method property called getNumberOfDepartments.
+
+allEmployees is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax.
+
+The method property receives employeesList and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.
+```
+{
+  allEmployees: {
+     engineering: [
+          'John Doe',
+          'Guillaume Salva',
+     ],
+  },
+};
+$ npm run dev 12-main.js 
+{ engineering: [ 'Bob', 'Jane' ], marketing: [ 'Sylvie' ] }
+2
+```
+
+## [13. Iterating through report objects](./100-createIteratorObject.js)
+Write a function named createIteratorObject, that will take into argument a report Object created with the previous function createReportObject.
+
+This function will return an iterator to go through every employee in every department.
+```
+$ npm run dev 100-main.js 
+Bob
+Jane
+Sylvie
 ```
 
