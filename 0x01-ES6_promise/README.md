@@ -158,7 +158,6 @@ Write and export a function named `uploadPhoto`. It should accept one argument `
 The function should return a Promise rejecting with an Error and the string `$fileName cannot be processed`
 ```
 export default function uploadPhoto(filename) {
-
 }
 $ npm run dev 5-main.js 
 Promise {
@@ -181,4 +180,72 @@ Write and export a function named `handleProfileSignup`. It should accept three 
   ]
 $ npm run dev 6-main.js 
 Promise { <pending> }
+```
+
+## [7. Load balancer](./7-load_balancer.js)
+Write and export a function named loadBalancer. It should accept two arguments chinaDownload (Promise) and USDownload (Promise).
+
+The function should return the value returned by the promise that resolved the first.
+```
+export default function loadBalancer(chinaDownload, USDownload) {
+}
+$ npm run dev 7-main.js 
+Downloading from UK is faster
+Downloading from FR is faster
+```
+
+## [8. Throw error / try catch](./8-try.js)
+Write a function named `divideFunction` that will accept two arguments: `numerator` (Number) and `denominator` (Number).
+
+When the `denominator` argument is equal to 0, the function should throw a new error with the message `cannot divide by 0`. Otherwise it should return the numerator divided by the denominator.
+```
+export default function divideFunction(numerator, denominator) {
+
+}
+$ npm run dev 8-main.js 
+5
+..../8-try.js:15
+  throw Error('cannot divide by 0');
+  ^
+```
+
+## [9. Throw an error](./9-try.js)
+Write a function named `guardrail` that will accept one argument `mathFunction` (Function).
+
+This function should create and return an array named `queue`.
+
+When the `mathFunction` function is executed, the value returned by the function should be appended to the queue. If this function throws an error, the error message should be appended to the queue. In every case, the message `Guardrail was processed` should be added to the queue.
+
+Example:
+```
+[
+  1000,
+  'Guardrail was processed',
+]
+$ npm run dev 9-main.js 
+[ 5, 'Guardrail was processed' ]
+[ 'Error: cannot divide by 0', 'Guardrail was processed' ]
+```
+
+## [10. Await / Async](./100-await.js)
+Import `uploadPhoto` and `createUser` from `utils.js`
+
+Write an async function named `asyncUploadUser` that will call these two functions and return an object with the following format:
+```
+{
+  photo: response_from_uploadPhoto_function,
+  user: response_from_createUser_function,
+}
+```
+If one of the async function fails, return an empty object. Example:
+```
+{
+  photo: null,
+  user: null,
+}
+$ npm run dev 100-main.js 
+{
+  photo: { status: 200, body: 'photo-profile-1' },
+  user: { firstName: 'Guillaume', lastName: 'Salva' }
+}
 ```
