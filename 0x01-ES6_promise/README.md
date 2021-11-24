@@ -148,6 +148,7 @@ That returns a resolved promise with this object:
   firstName: value,
   lastName: value,
 }
+
 $ npm run dev 4-main.js 
 Promise { { firstName: 'Bob', lastName: 'Dylan' } }
 ```
@@ -159,6 +160,7 @@ The function should return a Promise rejecting with an Error and the string `$fi
 ```
 export default function uploadPhoto(filename) {
 }
+
 $ npm run dev 5-main.js 
 Promise {
   <rejected> Error: guillaume.jpg cannot be processed
@@ -178,17 +180,19 @@ Write and export a function named `handleProfileSignup`. It should accept three 
     },
     ...
   ]
+
 $ npm run dev 6-main.js 
 Promise { <pending> }
 ```
 
 ## [7. Load balancer](./7-load_balancer.js)
-Write and export a function named loadBalancer. It should accept two arguments chinaDownload (Promise) and USDownload (Promise).
+Write and export a function named `loadBalancer`. It should accept two arguments `chinaDownload` (Promise) and `USDownload` (Promise).
 
 The function should return the value returned by the promise that resolved the first.
 ```
 export default function loadBalancer(chinaDownload, USDownload) {
 }
+
 $ npm run dev 7-main.js 
 Downloading from UK is faster
 Downloading from FR is faster
@@ -202,6 +206,7 @@ When the `denominator` argument is equal to 0, the function should throw a new e
 export default function divideFunction(numerator, denominator) {
 
 }
+
 $ npm run dev 8-main.js 
 5
 ..../8-try.js:15
@@ -222,6 +227,7 @@ Example:
   1000,
   'Guardrail was processed',
 ]
+
 $ npm run dev 9-main.js 
 [ 5, 'Guardrail was processed' ]
 [ 'Error: cannot divide by 0', 'Guardrail was processed' ]
@@ -243,6 +249,7 @@ If one of the async function fails, return an empty object. Example:
   photo: null,
   user: null,
 }
+
 $ npm run dev 100-main.js 
 {
   photo: { status: 200, body: 'photo-profile-1' },
