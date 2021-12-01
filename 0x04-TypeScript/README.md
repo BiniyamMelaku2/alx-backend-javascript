@@ -9,10 +9,10 @@ Read or watch:
 ## Configuration Files
 Please use these files for the following tasks
 
-* [package.json](./)
-* [.eslintrc.js](./)
-* [tsconfig.json](./)
-* [webpack.config.js](./)
+* [package.json](./package.json)
+* [.eslintrc.js](./.eslintrc.js)
+* [tsconfig.json](./tsconfig.json)
+* [webpack.config.js](./webpack.config.js)
 
 ## Tasks
 
