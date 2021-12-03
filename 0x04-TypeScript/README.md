@@ -17,11 +17,11 @@ Please use these files for the following tasks
 ## Install dependencies with
 `npm install`
 
-## build project files with npm
+## Building project files with npm build
 
-`$ npm run build ../task_0/js/main.ts`  | will autogenerate dir & files `dist/bundle.js` & `dist/index.html`
+`$ npm run build ../task_0/js/main.ts`  | will autogenerate files `dist/bundle.js` & `dist/index.html`
 
-`$ node ../task_0/dist/bundle.js`  | execute generated js code from terminal
+`$ node ../task_0/dist/bundle.js`  | will execute code from terminal
 
 
 ## Tasks
