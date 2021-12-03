@@ -15,13 +15,13 @@ Please use these files for the following tasks
 * [webpack.config.js](./webpack.config.js)
 
 ## Install dependencies with
-`npm install`
+`$ npm install`
 
 ## Building project files with npm build
 
-`$ npm run build ../task_0/js/main.ts`  | will autogenerate files `dist/bundle.js` & `dist/index.html`
+`$ npm run build ../task_x/js/main.ts`  | will autogenerate files `dist/bundle.js` & `dist/index.html`
 
-`$ node ../task_0/dist/bundle.js`  | will execute code from terminal
+`$ node ../task_x/dist/bundle.js`  | will execute code from terminal
 
 
 ## Tasks
