@@ -17,6 +17,12 @@ Please use these files for the following tasks
 ## Install dependencies with
 `npm install`
 
+## build project files with npm
+
+`$ npm run build ../task_0/js/main.ts`  //will autogenerate dir & files `dist/bundle.js` & `dist/index.html`
+`$ node ../task_0/dist/bundle.js`  //execute generated js code from terminal
+
+
 ## Tasks
 
 ## [0. Creating an interface for a student - task_0](./task_0/)
