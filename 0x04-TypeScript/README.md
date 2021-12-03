@@ -19,7 +19,7 @@ Please use these files for the following tasks
 
 ## Tasks
 
-## [0. Creating an interface for a student](./task_0/)
+## [0. Creating an interface for a student - task_0](./task_0/)
 Copy the following configuration files (provided above) into the `task_0` directory: `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
 
 Write your code in the `main.ts` file:
@@ -38,7 +38,7 @@ $ node ../task_0/dist/bundle.js
 ```
 
 
-## [1. Let's build a Teacher interface](./task_1/)
+## [1. Let's build a Teacher interface - task_1](./task_1/)
 Create a directory `task_1` and copy these configuration files into this folder: 	`package.json`, `tsconfig.json`, `webpack.config.js`
 
 * `firstName(string)` and `lastName(string)`. These two attributes should only be modifiable when a Teacher is first initialized
@@ -70,7 +70,7 @@ $ node ../task_1/dist/bundle.js
 
 ```
 
-## [2. Extending the Teacher class](./task_1/js/main.ts)
+## [2. Extending the Teacher class - task_1](./task_1/js/main.ts)
 Write an interface named `Directors` that extends `Teacher`. It requires an attribute named `numberOfReports(number)`
 Example:
 ```
@@ -92,7 +92,7 @@ console.log(director1);
 // numberOfReports: 17
 ```
 
-## [3. Printing teachers](./task_1/js/main.ts)
+## [3. Printing teachers - task_1](./task_1/js/main.ts)
 Write a function `printTeacher`:
 
 * It accepts two arguments `firstName` and `lastName`
@@ -100,7 +100,7 @@ Write a function `printTeacher`:
 * Example: `printTeacher("John", "Doe") -> J. Doe`
 Write an interface for the function named `printTeacherFunction`.
 
-## [4. Writing a class](./task_1/js/main.ts)
+## [4. Writing a class - task_1](./task_1/js/main.ts)
 Write a Class named `StudentClass`:
 
 * The constructor accepts `firstName(string)` and `lastName(string)` arguments
@@ -115,7 +115,7 @@ Requirements:
 * When running `npm run build`, no TypeScript error should be displayed.
 * Every variable should use TypeScript when possible.
 
-## [5. Advanced types Part 1](./task_2/js/main.ts)
+## [5. Advanced types Part 1 - task_2](./task_2/js/main.ts)
 Create the `DirectorInterface` interface with the 3 expected methods:
 
 * `workFromHome()` returning a string
@@ -154,9 +154,11 @@ console.log(createEmployee(1000));
 Director
 console.log(createEmployee('$500'));
 Director
+$ npm run build ../task_2/js/main.ts
+$ 
 ```
 
-## [6. Creating functions specific to employees](./task_2/js/main.ts)
+## [6. Creating functions specific to employees - task_2](./task_2/js/main.ts)
 Write a function `isDirector`:
 
 * it accepts `employee` as an argument
@@ -176,7 +178,7 @@ executeWork(createEmployee(1000));
 Getting to director tasks
 ```
 
-## [7. String literal types](./task_2/js/main.ts)
+## [7. String literal types - task_2](./task_2/js/main.ts)
 Write a String literal type named `Subjects` allowing a variable to have the value `Math` or `History` only. Write a function named `teachClass`:
 
 * it takes `todayClass` as an argument
@@ -191,7 +193,7 @@ teachClass('History');
 Teaching History
 ```
 
-## [8. Ambient Namespaces](./task_3/js/main.ts)
+## [8. Ambient Namespaces - task_3](./task_3/js/main.ts)
 Create a directory called `task_3` and copy these configuration files into it: `package.json`, `webpack.config.js`, `tsconfig.json`.
 
 The first part of will require that you build an `interface` and a `type`. Inside a file named `interface.ts`:
@@ -261,7 +263,7 @@ Requirements:
 * The main file and the ambient file should both import the types defined in the interface file.
 * You can easily test your ambient file by looking at the intellisense of your IDE when using the 3rd party functions.
 
-## [9. Namespace & Declaration merging](./task_4)
+## [9. Namespace & Declaration merging - task_4](./task_4)
 Create a new directory task_4 and copy the above tsconfig.json and put this package.json in there
 ```
 {
@@ -313,7 +315,7 @@ In `task_4/js/subjects`:
         Write a method named `getAvailableTeacher` that will return a string `Available Teacher: <first name of teacher>`
         If the teacher doesn’t have any experience in teaching Java, then the method should return a string `No available teacher`
 
-## [10. Update task_4/js/main.ts](./task_4/js/main.ts)
+## [10. Update task_4/js/main.ts - task_4](./task_4/js/main.ts)
 * create and export a constant `cpp` for Cpp Subjects
 * create and export a constant `java` for Java Subjects
 * create and export a constant `react` for React Subjects
@@ -322,7 +324,7 @@ In `task_4/js/subjects`:
 * for Java subject, log to the console `Java`, set `cTeacher` as the teacher, call the two * methods `getRequirements` and `getAvailableTeacher`, and print the strings they return
 * for React subject, log to the console `React`, set `cTeacher` as the teacher, call the two methods `getRequirements` and `getAvailableTeacher`, and print the strings they return
 
-## [11. Brand convention & Nominal typing](./task_5/js/main.ts)
+## [11. Brand convention & Nominal typing - task_5](./task_5/js/main.ts)
 Create a directory `task_5` and copy these configuration files into the root of task_5: `package.json`, `tsconfig.json`, `webpack.config.js`
 
 Create two interfaces `MajorCredits` and `MinorCredits` in `task_5/js/main.ts`:
