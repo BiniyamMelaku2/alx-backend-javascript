@@ -9,7 +9,7 @@ const { spy } = require("sinon");
 
 
 describe("sendPaymentRequestToApi", () => {
-  it("return the sum of arguments", () => {
+  it("calls calculateNumber", () => {
     const calNumSpy = sinon.spy(utils, 'calculateNumber');
     const consoleSpy = sinon.spy(console, 'log');
     const apiReqRes = sendPaymentRequestToApi(100, 20);
