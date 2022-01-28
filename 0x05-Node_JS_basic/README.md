@@ -199,7 +199,8 @@ Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaum
 Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 ```
 
-## [8. Organize a complex HTTP server using Express](./)
+## [8. Organize a complex HTTP server using Express](./full_server/utils.js), [AppController.js](./full_server/controllers/AppController.js), [StudentsController.js](./full_server/controllers/StudentsController.js), [index.js](./full_server/routes/index.js),
+[server.js](./full_server/server.js)
 Let’s create a full server in a directory named `full_server`
 
 Let’s use `babel-node` to allow to use ES6 functions like `import` or `export`.
