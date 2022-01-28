@@ -9,5 +9,4 @@ controllerRouting(app);
 app.listen(port, () => {
   console.log(`Express Server app listening at http://localhost:${port}`);
 });
-
-export default app;
+module.exports = app;
